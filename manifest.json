@@ -1,0 +1,24 @@
+ {
+    "name": "FIFS",
+    "version": "0.01",
+    "description": "F!",
+  	"content_scripts": [
+  	  {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+  	  }
+  	],
+  	"browser_action": {
+  		"default_popup": "popup.html",
+		"default_title": "Beaer"
+  },
+
+
+    // "permissions": ["storage"],
+    // "background": {
+    //   "scripts": ["background.js"],
+    //   "persistent": false
+    // },
+     "permissions": ["tabs"],
+    "manifest_version": 2
+  }
